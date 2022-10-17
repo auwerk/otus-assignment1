@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11
+FROM eclipse-temurin:11-alpine
 ARG app_ver="1.0-SNAPSHOT"
 RUN mkdir /opt/app
 COPY "build/libs/OtusAssignment1-${app_ver}.jar" /opt/app/app.jar
