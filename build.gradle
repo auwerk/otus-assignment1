@@ -1,0 +1,22 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.4'
+    id 'io.freefair.lombok' version '6.5.1'
+    id 'java'
+}
+
+group 'org.auwerk'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('org.springframework.boot:spring-boot-dependencies:2.7.4')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
